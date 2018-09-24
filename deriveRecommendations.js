@@ -73,6 +73,7 @@ agenda.define('consolidateProductsOrdered', async (job, done) => {
           prevOrdersConsidered,
           prevOrderedProducts: combinedProductList,
         },
+        updatedAt: new Date(),
       };
 
       await db.collection('Recommendations').replaceOne(

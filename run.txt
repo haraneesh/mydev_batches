@@ -1,1 +1,6 @@
+pm2 list
 pm2 start process.json --env production
+pm2 stop process.json
+pm2 show deriveRecommendations
+
+nano /home/suvai/.pm2/logs/deriveRecommendations-error-0.log 
